@@ -23,3 +23,15 @@ mvn GOLE_NAME
     -test : ejecutar todas las pruebas unitarias
     -package : empaquetar proyecto
     -install : inlcuir nuestro artefacto en nuestro repositorio
+    
+    # Ejecutrar comandos dentro de un conteneder
+        docker exec CONTENEDOR COMANDO
+        docker exec -it CONTENEDOR COMANDO
+        #copiar archivos entre conteneder y host
+        docker cp ORIGEN DESTINO
+            tanto en origen como destino puedo preceder al ruta de "CONTENEDOR:"
+            Ejemplo: docker cp mitomcat:/etc/configuration ./configcopiada
+            Ejemplo: docker cp ./configcopiada mitomcat:/etc/configuration 
+            
+            
+    
